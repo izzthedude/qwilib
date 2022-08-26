@@ -9,7 +9,6 @@ SOURCE_ROOT = PROJECT_ROOT / "qwilib"
 with open(str(PROJECT_ROOT / "requirements.txt"), "r") as file:
     REQUIREMENTS = file.readlines()
 
-# Setting up
 setup(
     name=PROJECT_NAME,
     version="0.1.0",
