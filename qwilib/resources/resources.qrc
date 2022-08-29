@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="qwilib/icons">
+        <file alias="application-logo">icons/icons8-library-96.png</file>
+        <file alias="account-circle">icons/default_account_circle.svg</file>
+        <file alias="add">icons/default_add.svg</file>
+        <file alias="double-arrow-down">icons/default_double_arrow_down.svg</file>
+        <file alias="filter">icons/default_filter.svg</file>
+        <file alias="info">icons/default_info.svg</file>
+        <file alias="notifications">icons/default_notifications.svg</file>
+        <file alias="refresh">icons/default_refresh.svg</file>
+        <file alias="grid-view">icons/default_view_grid.svg</file>
+        <file alias="list-view">icons/default_view_list.svg</file>
+    </qresource>
+</RCC>
