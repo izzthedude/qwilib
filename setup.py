@@ -1,11 +1,12 @@
 from pathlib import Path
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 PROJECT_NAME = "qwilib"
 PROJECT_ROOT = Path(__file__).parent
 SOURCE_ROOT = PROJECT_ROOT / PROJECT_NAME
-RESOURCES = f"{str(SOURCE_ROOT / 'resources' / 'icons')}/*"
+RESOURCES = SOURCE_ROOT / 'resources'
+ICONS = SOURCE_ROOT / 'resources' / 'icons'
 
 with open(str(PROJECT_ROOT / "requirements.txt"), "r") as file:
     REQUIREMENTS = file.readlines()
@@ -19,8 +20,8 @@ setup(
     long_description_content_type="text/markdown",
     long_description="A Python library that attempts to pre-define some Qt Widgets (based on Pyside) for ease of "
                      "development.",
-    packages=[PROJECT_NAME],
-    package_data={PROJECT_NAME: [RESOURCES]},
+    packages=find_packages(where=str(PROJECT_ROOT), exclude=["tests"]),
+    package_data={PROJECT_NAME: [f"{RESOURCES}/*", f"{ICONS}/*"]},
     include_package_data=True,
     install_requires=REQUIREMENTS,
     keywords=[
@@ -34,5 +35,6 @@ setup(
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
         "Operating System :: Unix",
+        "Operating System :: Windows",
     ]
 )

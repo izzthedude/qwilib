@@ -1,32 +1,17 @@
-import os
-from pathlib import Path
-
-
-class Paths:
-    PROJECT_ROOT = Path(__file__).parent
-    RESOURCES = Path(PROJECT_ROOT / "resources")
+# noinspection PyUnresolvedReferences
+from qwilib import resources
 
 
 class Icons:
-    DIR = os.path.join(str(Paths.RESOURCES), "icons")
-
-    APP_LOGO = os.path.join(DIR, "icons8-lemon-32.png")
-    DEFAULT_PROFILE = os.path.join(DIR, "default_account_circle.svg")
-    ADD_DEFAULT = os.path.join(DIR, "default_add.svg")
-    FILTER_DEFAULT = os.path.join(DIR, "default_filter.svg")
-    REFRESH_DEFAULT = os.path.join(DIR, "default_refresh.svg")
-    COLLAPSE_DEFAULT = os.path.join(DIR, "default_double_arrow_down.svg")
-    NOTIFICATION_DEFAULT = os.path.join(DIR, "default_notifications.svg")
-    INFO_DEFAULT = os.path.join(DIR, "default_info.svg")
-    GRIDVIEW_DEFAULT = os.path.join(DIR, "default_view_grid.svg")
-    LISTVIEW_DEFAULT = os.path.join(DIR, "default_view_list.svg")
-
-
-class Styles:
-    DIR = os.path.join(str(Paths.RESOURCES), "styles")
-
-    LIGHT = os.path.join(DIR, "style_light.css")
-    DARK = os.path.join(DIR, "style_dark.css")
+    DEFAULT_PROFILE = ":/qwilib/icons/account-circle"
+    ADD_DEFAULT = ":/qwilib/icons/add"
+    FILTER_DEFAULT = ":/qwilib/icons/filter"
+    REFRESH_DEFAULT = ":/qwilib/icons/refresh"
+    COLLAPSE_DEFAULT = ":/qwilib/icons/double-arrow-down"
+    NOTIFICATION_DEFAULT = ":/qwilib/icons/notifications"
+    INFO_DEFAULT = ":/qwilib/icons/info"
+    GRIDVIEW_DEFAULT = ":/qwilib/icons/grid-view"
+    LISTVIEW_DEFAULT = ":/qwilib/icons/list-view"
 
 
 class IconSizes:

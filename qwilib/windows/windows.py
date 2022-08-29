@@ -2,9 +2,9 @@ __all__ = [
     "WindowView"
 ]
 
-from PySide6 import QtCore, QtGui, QtWidgets
+from PySide6 import QtCore, QtWidgets
 
-from qwilib import containers, enums
+from qwilib import containers
 
 
 class WindowView(containers.VBoxContainer):
@@ -12,7 +12,6 @@ class WindowView(containers.VBoxContainer):
         super().__init__(parent=parent)
 
         self.setWindowFlag(QtCore.Qt.Window)
-        self.setWindowIcon(QtGui.QPixmap(enums.Icons.APP_LOGO))
 
         title = self._define_title()
         self.setWindowTitle(title)
