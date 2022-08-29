@@ -1,6 +1,8 @@
-from PySide6 import QtCore
-from PySide6 import QtGui
-from PySide6 import QtWidgets
+__all__ = [
+    "WindowView"
+]
+
+from PySide6 import QtCore, QtGui, QtWidgets
 
 from qwilib import containers, enums
 
@@ -32,10 +34,3 @@ class WindowView(containers.VBoxContainer):
 
     def _define_size(self) -> QtCore.QSize:
         raise NotImplementedError("Override this method and return some QSize.")
-
-
-class ModalWindow(WindowView):
-    def __init__(self, parent: QtWidgets.QWidget):
-        super().__init__(parent=parent)
-
-        self.setWindowModality(QtCore.Qt.WindowModal)
