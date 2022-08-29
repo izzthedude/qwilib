@@ -10,13 +10,10 @@ This project started off as a *'copy-paste from that project to this one and the
 increasingly difficult to maintain once it started growing in size. So I decided to extract it as its own little project
 with its own repo.
 
-### Current Progress (v0.1.0):
+### Current Progress (v0.1.1):
 
-- [PR#1](https://github.com/izzthedude/qwilib/pull/1) Ported source files from private project. For now, I've simply
-  moved the source files out and dumped them into the repo with minimal changes for compatibility purposes. As such, it
-  is **not** actually ready to be used out in the wild until further progress has been made. I do plan on refactoring
-  the entire project to make it more general and suit the needs of projects outside my own. Until then, just... watch
-  the repo I guess lol
+- [PR#2](https://github.com/izzthedude/qwilib/pull/2) Restructured source files into sub-packages appropriately, used
+  qresource for Qwilib resources and cleaned up some unused enums.
 
 ## Installation
 

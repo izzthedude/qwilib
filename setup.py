@@ -13,7 +13,7 @@ with open(str(PROJECT_ROOT / "requirements.txt"), "r") as file:
 
 setup(
     name=PROJECT_NAME,
-    version="0.1.0",
+    version="0.1.1",
     author="Izzat Z.",
     author_email="<izzat.zainir11@gmail.com>",
     description="An opinionated Qt Widgets library.",
