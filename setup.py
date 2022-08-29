@@ -12,12 +12,12 @@ with open(str(PROJECT_ROOT / "requirements.txt"), "r") as file:
 
 setup(
     name=PROJECT_NAME,
-    version="0.1.0a1",
+    version="0.1.0",
     author="Izzat Z.",
     author_email="<izzat.zainir11@gmail.com>",
     description="An opinionated Qt Widgets library.",
     long_description_content_type="text/markdown",
-    long_description="A Python library that attempts to pre-define some Qt Widgets (based on Pyside) for ease of "
+    long_description="A Python library that attempts to pre-define some Qt Widgets (based on PySide6) for ease of "
                      "development.",
     packages=[PROJECT_NAME],
     package_data={PROJECT_NAME: [RESOURCES]},
